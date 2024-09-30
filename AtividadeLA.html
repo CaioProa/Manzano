@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadrados de Números Inteiros</title>
+</head>
+<body>
+    <h1>Quadrados dos Números Inteiros de 15 a 200</h1>
+    <ul id="listaQuadrados"></ul>
+
+    <script>
+        // Função para calcular e exibir os quadrados
+        function apresentarQuadrados() {
+            const lista = document.getElementById("listaQuadrados");
+            for (let i = 15; i <= 200; i++) {
+                const quadrado = i * i;
+                const listItem = document.createElement("li");
+                listItem.textContent = `O quadrado de ${i} é ${quadrado}`;
+                lista.appendChild(listItem);
+            }
+        }
+
+        // Chama a função para apresentar os quadrados
+        apresentarQuadrados();
+    </script>
+</body>
+</html>

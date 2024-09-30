@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somatório dos Pares</title>
+</head>
+<body>
+    <h1>Somatório dos Valores Pares de 1 a 500</h1>
+    <p id="resultado"></p>
+
+    <script>
+        function calcularSomatorioPares() {
+            let somatorio = 0;
+
+            for (let i = 1; i <= 500; i++) {
+                if (i % 2 === 0) {
+                    somatorio += i;
+                }
+            }
+
+            return somatorio;
+        }
+
+        const resultado = calcularSomatorioPares();
+        document.getElementById("resultado").innerText = `O somatório dos valores pares de 1 a 500 é: ${resultado}`;
+    </script>
+</body>
+</html>
